@@ -10,12 +10,16 @@ using System.Windows.Forms;
 using ucLogin;
 
 using bussinessAccessLayer.DangNhap_DangKi;
+using AnToanGiaoThong.Classes;
+using System.IO;
+
 namespace AnToanGiaoThong.Frm
 {
     public partial class frmLogin : Form
     {
 
         loginBA lg = new loginBA();
+        DataTable dt = new DataTable();
         public frmLogin()
         {
             InitializeComponent();
@@ -29,16 +33,23 @@ namespace AnToanGiaoThong.Frm
             string password = mLogin1.password;
 
             int result_login = lg.checkLogin(username, password);
-            if (1==result_login)
+
+            if (1!=result_login)
             {
-                MessageBox.Show("Nice");
-                this.Hide();
-                    
-                new frmMain().Show();
-            }else
-            {
-                MessageBox.Show("Fails");
+                return;
             }
+
+            dt=lg.infoUser(username).Tables[0];
+
+            UserModel um = new UserModel();
+            um.Username=dt.Rows[0][0].ToString();
+            um.Hoten=dt.Rows[0][2].ToString();
+            um.Ngaysinh=((DateTime)dt.Rows[0][3]).ToShortDateString();
+            um.Quequan=dt.Rows[0][4].ToString();
+            um.Avatar=(byte[])dt.Rows[0][5];
+
+            new frmMain(um).ShowDialog();
+            this.Close();
 
         }
         private void pressRegisterMethod(mLogin sender,EventArgs e)

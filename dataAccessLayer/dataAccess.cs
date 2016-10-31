@@ -34,11 +34,11 @@ namespace dataAccessLayer
         public DataSet executeQueryDataSet(string sql)
         {
             cmd.CommandText=sql;
+            cmd.CommandType=CommandType.Text;
             da=new SqlDataAdapter(cmd);
 
             DataSet ds = new DataSet();
             da.Fill(ds);
-
             return ds;
         }
         public bool executeNonQuery(string sql, CommandType ct,
@@ -101,7 +101,29 @@ namespace dataAccessLayer
             }
             return result;
         }
+        public DataSet ExcuteSP(string sql, CommandType ct,
 
+            params SqlParameter[] param)
+        {
+            if (conn.State==ConnectionState.Open)
+                conn.Close();
+            conn=new SqlConnection(this.connectionString);
+            cmd=conn.CreateCommand();
+            conn.Open();
+            cmd.Parameters.Clear();
+            cmd.CommandText=sql;
+            cmd.CommandType=ct;
+            foreach (SqlParameter p in param)
+                cmd.Parameters.Add(p);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+            DataSet ds = new DataSet();
+
+            da.Fill(ds);
+
+            return ds;
+        }
         public string getConnectionString()
         {
             return this.connectionString;

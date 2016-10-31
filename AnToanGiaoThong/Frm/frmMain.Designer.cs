@@ -30,23 +30,22 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnSoanDe = new ucButtonMenu.mButtonMenu();
+            this.btnThoat = new ucButtonMenu.mButtonMenu();
+            this.btnThongKe = new ucButtonMenu.mButtonMenu();
+            this.btnDiemNong = new ucButtonMenu.mButtonMenu();
+            this.btnKinhNghiem = new ucButtonMenu.mButtonMenu();
+            this.btnLuat = new ucButtonMenu.mButtonMenu();
+            this.btnOnThi = new ucButtonMenu.mButtonMenu();
+            this.btnThiTracNghiem = new ucButtonMenu.mButtonMenu();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.mButtonMenu3 = new ucButtonMenu.mButtonMenu();
-            this.mButtonMenu2 = new ucButtonMenu.mButtonMenu();
-            this.mButtonMenu1 = new ucButtonMenu.mButtonMenu();
+            this.label1 = new System.Windows.Forms.Label();
+            this.mHeaderButton1 = new ucHeaderButton.mHeaderButton();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -56,201 +55,140 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(0, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(197, 527);
+            this.panel1.Size = new System.Drawing.Size(213, 527);
             this.panel1.TabIndex = 2;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.button8);
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Controls.Add(this.button9);
-            this.panel4.Controls.Add(this.button6);
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.button3);
-            this.panel4.Controls.Add(this.button5);
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Location = new System.Drawing.Point(0, 60);
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.panel4.Controls.Add(this.btnSoanDe);
+            this.panel4.Controls.Add(this.btnThoat);
+            this.panel4.Controls.Add(this.btnThongKe);
+            this.panel4.Controls.Add(this.btnDiemNong);
+            this.panel4.Controls.Add(this.btnKinhNghiem);
+            this.panel4.Controls.Add(this.btnLuat);
+            this.panel4.Controls.Add(this.btnOnThi);
+            this.panel4.Controls.Add(this.btnThiTracNghiem);
+            this.panel4.Location = new System.Drawing.Point(0, 80);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(197, 379);
+            this.panel4.Size = new System.Drawing.Size(213, 375);
             this.panel4.TabIndex = 1;
             // 
-            // button8
+            // btnSoanDe
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.LightGray;
-            this.button8.Location = new System.Drawing.Point(0, 265);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(194, 40);
-            this.button8.TabIndex = 13;
-            this.button8.Text = "Thông tin cá nhân";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnSoanDe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnSoanDe.ForeColor = System.Drawing.Color.LightGray;
+            this.btnSoanDe.Location = new System.Drawing.Point(0, 95);
+            this.btnSoanDe.Name = "btnSoanDe";
+            this.btnSoanDe.Size = new System.Drawing.Size(205, 40);
+            this.btnSoanDe.TabIndex = 7;
             // 
-            // button1
+            // btnThoat
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 40);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Thi trắc nghiệm";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnThoat.ForeColor = System.Drawing.Color.LightGray;
+            this.btnThoat.Location = new System.Drawing.Point(0, 325);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(205, 40);
+            this.btnThoat.TabIndex = 6;
             // 
-            // button9
+            // btnThongKe
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.LightGray;
-            this.button9.Location = new System.Drawing.Point(0, 225);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(194, 40);
-            this.button9.TabIndex = 12;
-            this.button9.Text = "Thống kê";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnThongKe.ForeColor = System.Drawing.Color.LightGray;
+            this.btnThongKe.Location = new System.Drawing.Point(0, 279);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(205, 40);
+            this.btnThongKe.TabIndex = 5;
             // 
-            // button6
+            // btnDiemNong
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.LightGray;
-            this.button6.Location = new System.Drawing.Point(0, 190);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(194, 40);
-            this.button6.TabIndex = 14;
-            this.button6.Text = "Điểm nóng CSGT";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnDiemNong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnDiemNong.ForeColor = System.Drawing.Color.LightGray;
+            this.btnDiemNong.Location = new System.Drawing.Point(0, 233);
+            this.btnDiemNong.Name = "btnDiemNong";
+            this.btnDiemNong.Size = new System.Drawing.Size(205, 40);
+            this.btnDiemNong.TabIndex = 4;
             // 
-            // button2
+            // btnKinhNghiem
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.LightGray;
-            this.button2.Location = new System.Drawing.Point(0, 37);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(194, 40);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Ôn Thi";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnKinhNghiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnKinhNghiem.ForeColor = System.Drawing.Color.LightGray;
+            this.btnKinhNghiem.Location = new System.Drawing.Point(0, 187);
+            this.btnKinhNghiem.Name = "btnKinhNghiem";
+            this.btnKinhNghiem.Size = new System.Drawing.Size(205, 40);
+            this.btnKinhNghiem.TabIndex = 3;
             // 
-            // button3
+            // btnLuat
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.LightGray;
-            this.button3.Location = new System.Drawing.Point(0, 74);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(194, 40);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Soạn đề";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnLuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnLuat.ForeColor = System.Drawing.Color.LightGray;
+            this.btnLuat.Location = new System.Drawing.Point(0, 141);
+            this.btnLuat.Name = "btnLuat";
+            this.btnLuat.Size = new System.Drawing.Size(205, 40);
+            this.btnLuat.TabIndex = 2;
             // 
-            // button5
+            // btnOnThi
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.LightGray;
-            this.button5.Location = new System.Drawing.Point(0, 150);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(194, 40);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "Kinh nghiệm";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnOnThi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnOnThi.ForeColor = System.Drawing.Color.LightGray;
+            this.btnOnThi.Location = new System.Drawing.Point(0, 49);
+            this.btnOnThi.Name = "btnOnThi";
+            this.btnOnThi.Size = new System.Drawing.Size(205, 40);
+            this.btnOnThi.TabIndex = 1;
             // 
-            // button4
+            // btnThiTracNghiem
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.LightGray;
-            this.button4.Location = new System.Drawing.Point(0, 110);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(194, 40);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Luật";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnThiTracNghiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnThiTracNghiem.ForeColor = System.Drawing.Color.LightGray;
+            this.btnThiTracNghiem.Location = new System.Drawing.Point(0, 3);
+            this.btnThiTracNghiem.Name = "btnThiTracNghiem";
+            this.btnThiTracNghiem.Size = new System.Drawing.Size(205, 40);
+            this.btnThiTracNghiem.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(70)))), ((int)(((byte)(91)))));
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(197, 60);
+            this.panel2.Size = new System.Drawing.Size(213, 74);
             this.panel2.TabIndex = 0;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.mButtonMenu3);
-            this.panel3.Controls.Add(this.mButtonMenu2);
-            this.panel3.Controls.Add(this.mButtonMenu1);
-            this.panel3.Location = new System.Drawing.Point(200, 30);
+            this.panel3.Location = new System.Drawing.Point(211, 30);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(805, 527);
+            this.panel3.Size = new System.Drawing.Size(794, 527);
             this.panel3.TabIndex = 3;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(164)))), ((int)(((byte)(228)))));
+            this.panel6.Controls.Add(this.label1);
+            this.panel6.Controls.Add(this.mHeaderButton1);
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1005, 31);
             this.panel6.TabIndex = 0;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
-            // mButtonMenu3
+            // label1
             // 
-            this.mButtonMenu3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.mButtonMenu3.ForeColor = System.Drawing.Color.LightGray;
-            this.mButtonMenu3.Location = new System.Drawing.Point(188, 148);
-            this.mButtonMenu3.Name = "mButtonMenu3";
-            this.mButtonMenu3.SELECTED = false;
-            this.mButtonMenu3.Size = new System.Drawing.Size(194, 40);
-            this.mButtonMenu3.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(384, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(223, 21);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Phần mềm An Toàn Giao Thông";
             // 
-            // mButtonMenu2
+            // mHeaderButton1
             // 
-            this.mButtonMenu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.mButtonMenu2.ForeColor = System.Drawing.Color.LightGray;
-            this.mButtonMenu2.Location = new System.Drawing.Point(188, 102);
-            this.mButtonMenu2.Name = "mButtonMenu2";
-            this.mButtonMenu2.SELECTED = false;
-            this.mButtonMenu2.Size = new System.Drawing.Size(194, 40);
-            this.mButtonMenu2.TabIndex = 1;
-            // 
-            // mButtonMenu1
-            // 
-            this.mButtonMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.mButtonMenu1.ForeColor = System.Drawing.Color.LightGray;
-            this.mButtonMenu1.Location = new System.Drawing.Point(188, 60);
-            this.mButtonMenu1.Name = "mButtonMenu1";
-            this.mButtonMenu1.SELECTED = false;
-            this.mButtonMenu1.Size = new System.Drawing.Size(194, 40);
-            this.mButtonMenu1.TabIndex = 0;
+            this.mHeaderButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(164)))), ((int)(((byte)(228)))));
+            this.mHeaderButton1.Location = new System.Drawing.Point(945, 5);
+            this.mHeaderButton1.Name = "mHeaderButton1";
+            this.mHeaderButton1.Size = new System.Drawing.Size(48, 19);
+            this.mHeaderButton1.TabIndex = 0;
             // 
             // frmMain
             // 
@@ -265,7 +203,8 @@
             this.Text = "frmMain";
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -277,16 +216,16 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private ucButtonMenu.mButtonMenu mButtonMenu2;
-        private ucButtonMenu.mButtonMenu mButtonMenu1;
-        private ucButtonMenu.mButtonMenu mButtonMenu3;
+        private ucButtonMenu.mButtonMenu btnThiTracNghiem;
+        private System.Windows.Forms.Label label1;
+        private ucHeaderButton.mHeaderButton mHeaderButton1;
+        private ucButtonMenu.mButtonMenu btnThoat;
+        private ucButtonMenu.mButtonMenu btnThongKe;
+        private ucButtonMenu.mButtonMenu btnDiemNong;
+        private ucButtonMenu.mButtonMenu btnKinhNghiem;
+        private ucButtonMenu.mButtonMenu btnLuat;
+        private ucButtonMenu.mButtonMenu btnSoanDe;
+        private ucButtonMenu.mButtonMenu btnOnThi;
+        private Module.HelloUser helloUser1;
     }
 }

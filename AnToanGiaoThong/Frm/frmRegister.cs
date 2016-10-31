@@ -25,7 +25,7 @@ namespace AnToanGiaoThong.Frm
         {
             string username = mRegister1.username;
             string password = mRegister1.password;
-            
+            MessageBox.Show(username+password);
             bool result_register = reg.register(username, password);
             if (true==result_register)
             {

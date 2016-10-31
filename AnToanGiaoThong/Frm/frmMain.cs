@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AnToanGiaoThong.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,28 +13,95 @@ namespace AnToanGiaoThong.Frm
 {
     public partial class frmMain : Form
     {
-        public frmMain()
+        private UserModel curUser;
+        public frmMain(UserModel um)
         {
-            InitializeComponent();
-            new Classes.MoveFrame(panel6);
-            mButtonMenu1.Click+=new EventHandler(btnMenuClick);
-            mButtonMenu2.Click+=new EventHandler(btnMenuClick);
-            mButtonMenu3.Click+=new EventHandler(btnMenuClick);
+            this.curUser=um;
 
-            mButtonMenu1.SetImage(AnToanGiaoThong.Properties.Resources.winter_nature_1280x720);
+            InitializeComponent();
+
+            this.panel2.Controls.Add(new Module.HelloUser(um));
+
+            new Classes.MoveFrame(this.panel6);
+
+            InitMenu();
+           
+        }
+        
+        private void InitMenu()
+        {
+            btnThiTracNghiem.click+=new ClickHandler(btnMenuClick);
+            btnThiTracNghiem.Click+=new EventHandler(btnMenuClick);
+            btnThiTracNghiem.SetImage(AnToanGiaoThong.Properties.Resources.thitracnghiem);
+            btnThiTracNghiem.SetText("Thi Trắc Nghiệm");
+
+            btnOnThi.click+=new ClickHandler(btnMenuClick);
+            btnOnThi.Click+=new EventHandler(btnMenuClick);
+            btnOnThi.SetImage(AnToanGiaoThong.Properties.Resources.onthi);
+            btnOnThi.SetText("Ôn Thi");
+
+            btnSoanDe.click+=new ClickHandler(btnMenuClick);
+            btnSoanDe.Click+=new EventHandler(btnMenuClick);
+            btnSoanDe.SetImage(AnToanGiaoThong.Properties.Resources.soande);
+            btnSoanDe.SetText("Soạn Đề");
+
+            btnLuat.click+=new ClickHandler(btnMenuClick);
+            btnLuat.Click+=new EventHandler(btnMenuClick);
+            btnLuat.SetImage(AnToanGiaoThong.Properties.Resources.xemluat);
+            btnLuat.SetText("Xem Luật");
+
+            btnKinhNghiem.click+=new ClickHandler(btnMenuClick);
+            btnKinhNghiem.Click+=new EventHandler(btnMenuClick);
+            btnKinhNghiem.SetImage(AnToanGiaoThong.Properties.Resources.xemkinhnghiem);
+            btnKinhNghiem.SetText("Xem Kinh Nghiệm");
+
+            btnDiemNong.click+=new ClickHandler(btnMenuClick);
+            btnDiemNong.Click+=new EventHandler(btnMenuClick);
+            btnDiemNong.SetImage(AnToanGiaoThong.Properties.Resources.diemnong);
+            btnDiemNong.SetText("Điểm nóng CSGT");
+
+            btnThongKe.click+=new ClickHandler(btnMenuClick);
+            btnThongKe.Click+=new EventHandler(btnMenuClick);
+            btnThongKe.SetImage(AnToanGiaoThong.Properties.Resources.thongke);
+            btnThongKe.SetText("Thống Kê");
+
+            btnThoat.click+=new ClickHandler(btnMenuClick);
+            btnThoat.Click+=new EventHandler(btnMenuClick);
+            btnThoat.SetImage(AnToanGiaoThong.Properties.Resources.thoat);
+            btnThoat.SetText("Thoát");
+
         }
         private void btnMenuClick(object sender, EventArgs e)
         {
-            mButtonMenu1.SELECTED=false;
-            mButtonMenu2.SELECTED=false;
-            mButtonMenu3.SELECTED=false;
-            ((mButtonMenu)sender).SELECTED=true;
-           
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
+            mButtonMenu t = sender as mButtonMenu;
+            switch (t.Name)
+            {
+                case "btnThiTracNghiem":
+                    MessageBox.Show("btnThiTracNghiem");
+                    break;
+                case "btnOnThi":
+                    MessageBox.Show("btnOnThi");
+                    break;
+                case "btnSoanDe":
+                    MessageBox.Show("btnSoanDe");
+                    break;
+                case "btnLuat":
+                    MessageBox.Show("btnLuat");
+                    break;
+                case "btnKinhNghiem":
+                    MessageBox.Show("btnKinhNghiem");
+                    break;
+                case "btnDiemNong":
+                    MessageBox.Show("btnDiemNong");
+                    break;
+                case "btnThongKe":
+                    MessageBox.Show("btnThongKe");
+                    break;
+                case "btnThongTinCaNhan":
+                    MessageBox.Show("btnThongTinCaNhan");
+                    break;
+                default: break;
+            }
         }
     }
 }

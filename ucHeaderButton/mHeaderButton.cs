@@ -19,12 +19,12 @@ namespace ucHeaderButton
 
         private void label1_Click(object sender, EventArgs e)
         {
-           
+           (((Panel) this.Parent).Parent as Form).WindowState=FormWindowState.Minimized;
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            (((Panel)this.Parent).Parent as Form).Close();
         }
     }
 }

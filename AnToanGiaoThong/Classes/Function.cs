@@ -1,29 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Drawing.Drawing2D;
-using System.Drawing.Imaging;
 
-namespace ucButtonMenu
+namespace AnToanGiaoThong.Classes
 {
-
-    public delegate void ClickHandler(mButtonMenu sender, EventArgs e);
-    public partial class mButtonMenu : UserControl
+    public class Function
     {
-        public event ClickHandler click;
-        public mButtonMenu()
+
+        //Resize Image
+        public Function()
         {
-            InitializeComponent();
-            this.pictureBox1.SendToBack();
-            this.label1.SendToBack();
+
         }
-        public static Bitmap ResizeImage(Image image, int width, int height)
+        public Bitmap ResizeImage(Image image, int width, int height)
         {
             var destRect = new Rectangle(0, 0, width, height);
             var destImage = new Bitmap(width, height);
@@ -47,27 +42,14 @@ namespace ucButtonMenu
 
             return destImage;
         }
-        public void SetImage(Image img)
+        public Bitmap Byte2Image(byte[] img)
         {
-            img=ResizeImage(img, pictureBox1.Size.Width, pictureBox1.Size.Height);
-            this.pictureBox1.Image=img;
-            pictureBox1.SizeMode=PictureBoxSizeMode.StretchImage;
+            MemoryStream str = new MemoryStream();
+            str.Write(img, 0, img.Length);
+            Bitmap bit = new Bitmap(str);
+            return bit;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            if (click!=null)
-            {
-                click(this, e);
-            }
-        }
-       public void SetText(string name)
-        {
-            this.label1.Text=name;
-        }
-        public string getText()
-        {
-            return this.label1.Text;
-        }
-    }
+
+    }//end class
 }
