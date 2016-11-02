@@ -82,6 +82,7 @@ namespace AnToanGiaoThong.Frm
                     break;
                 case "btnOnThi":
                     this.panel3.Controls.Clear();
+                    this.panel3.Controls.Add(new Module.nganHangCauHoi());
                     MessageBox.Show("btnOnThi");
                     break;
                 case "btnSoanDe":
