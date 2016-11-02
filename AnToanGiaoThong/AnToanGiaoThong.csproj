@@ -87,6 +87,24 @@
     <Compile Include="Module\HelloUser.Designer.cs">
       <DependentUpon>HelloUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Module\hocLuatGiaoThong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\hocLuatGiaoThong.Designer.cs">
+      <DependentUpon>hocLuatGiaoThong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\nganHangCauHoi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\nganHangCauHoi.Designer.cs">
+      <DependentUpon>nganHangCauHoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\soanDeThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\soanDeThi.Designer.cs">
+      <DependentUpon>soanDeThi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Frm\frmDoiProfile.resx">
@@ -106,6 +124,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Module\HelloUser.resx">
       <DependentUpon>HelloUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\hocLuatGiaoThong.resx">
+      <DependentUpon>hocLuatGiaoThong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\nganHangCauHoi.resx">
+      <DependentUpon>nganHangCauHoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\soanDeThi.resx">
+      <DependentUpon>soanDeThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -187,6 +214,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\thoat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-arrow-right-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File-Delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-printer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-document-save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit-Document-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
