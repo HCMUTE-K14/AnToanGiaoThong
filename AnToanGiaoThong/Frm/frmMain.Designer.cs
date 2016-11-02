@@ -226,6 +226,6 @@
         private ucButtonMenu.mButtonMenu btnLuat;
         private ucButtonMenu.mButtonMenu btnSoanDe;
         private ucButtonMenu.mButtonMenu btnOnThi;
-        private Module.HelloUser helloUser1;
+        private Module.ucHelloUser helloUser1;
     }
 }

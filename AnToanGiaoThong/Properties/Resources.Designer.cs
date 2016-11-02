@@ -163,9 +163,15 @@ namespace AnToanGiaoThong.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< refs/remotes/origin/master
         internal static System.Drawing.Bitmap pdf_icon {
             get {
                 object obj = ResourceManager.GetObject("pdf_icon", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap pause {
+            get {
+                object obj = ResourceManager.GetObject("pause", resourceCulture);
+>>>>>>> add control
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +179,15 @@ namespace AnToanGiaoThong.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< refs/remotes/origin/master
         internal static System.Drawing.Bitmap pdf_icon__1_ {
             get {
                 object obj = ResourceManager.GetObject("pdf_icon__1_", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap redo {
+            get {
+                object obj = ResourceManager.GetObject("redo", resourceCulture);
+>>>>>>> add control
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +198,26 @@ namespace AnToanGiaoThong.Properties {
         internal static System.Drawing.Bitmap soande {
             get {
                 object obj = ResourceManager.GetObject("soande", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap submit {
+            get {
+                object obj = ResourceManager.GetObject("submit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thirr {
+            get {
+                object obj = ResourceManager.GetObject("thirr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +248,26 @@ namespace AnToanGiaoThong.Properties {
         internal static System.Drawing.Bitmap thongke {
             get {
                 object obj = ResourceManager.GetObject("thongke", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap time {
+            get {
+                object obj = ResourceManager.GetObject("time", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undo {
+            get {
+                object obj = ResourceManager.GetObject("undo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

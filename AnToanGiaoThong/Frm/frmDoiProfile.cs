@@ -17,6 +17,7 @@ namespace AnToanGiaoThong.Frm
         public frmDoiProfile(string username)
         {
             InitializeComponent();
+
             this.username=username;
 
             new MoveFrame(this.panel1);
@@ -25,7 +26,7 @@ namespace AnToanGiaoThong.Frm
 
         private void frmDoiProfile_Load(object sender, EventArgs e)
         {
-            Module.ChangeProfile cp = new Module.ChangeProfile(username);
+            Module.ucChangeProfile cp = new Module.ucChangeProfile(username);
             this.panel2.Controls.Add(cp);
 
         }

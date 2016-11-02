@@ -1,6 +1,6 @@
 ﻿namespace AnToanGiaoThong.Module
 {
-    partial class HelloUser
+    partial class ucHelloUser
     {
         /// <summary> 
         /// Required designer variable.

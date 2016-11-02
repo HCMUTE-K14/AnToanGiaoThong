@@ -1,6 +1,6 @@
 ﻿namespace AnToanGiaoThong.Module
 {
-    partial class ChangeProfile
+    partial class ucChangeProfile
     {
         /// <summary> 
         /// Required designer variable.

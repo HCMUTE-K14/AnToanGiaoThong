@@ -11,9 +11,9 @@ using AnToanGiaoThong.Classes;
 using bussinessAccessLayer.DangNhap_DangKi;
 namespace AnToanGiaoThong.Module
 {
-    public partial class ChangeProfile : UserControl
+    public partial class ucChangeProfile : UserControl
     {
-        public ChangeProfile(string username)
+        public ucChangeProfile(string username)
         {
             this.username=username;
             InitializeComponent();

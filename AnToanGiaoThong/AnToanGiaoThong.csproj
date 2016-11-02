@@ -75,17 +75,23 @@
     <Compile Include="Frm\frmRegister.Designer.cs">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="Module\ChangeProfile.cs">
+    <Compile Include="Module\ucChangeProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Module\ChangeProfile.Designer.cs">
-      <DependentUpon>ChangeProfile.cs</DependentUpon>
+    <Compile Include="Module\ucChangeProfile.Designer.cs">
+      <DependentUpon>ucChangeProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Module\HelloUser.cs">
+    <Compile Include="Module\ucHelloUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Module\HelloUser.Designer.cs">
-      <DependentUpon>HelloUser.cs</DependentUpon>
+    <Compile Include="Module\ucHelloUser.Designer.cs">
+      <DependentUpon>ucHelloUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ucThiTracNghiem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\ucThiTracNghiem.Designer.cs">
+      <DependentUpon>ucThiTracNghiem.cs</DependentUpon>
     </Compile>
     <Compile Include="Module\hocLuatGiaoThong.cs">
       <SubType>UserControl</SubType>
@@ -119,11 +125,14 @@
     <EmbeddedResource Include="Frm\frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Module\ChangeProfile.resx">
-      <DependentUpon>ChangeProfile.cs</DependentUpon>
+    <EmbeddedResource Include="Module\ucChangeProfile.resx">
+      <DependentUpon>ucChangeProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Module\HelloUser.resx">
-      <DependentUpon>HelloUser.cs</DependentUpon>
+    <EmbeddedResource Include="Module\ucHelloUser.resx">
+      <DependentUpon>ucHelloUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\ucThiTracNghiem.resx">
+      <DependentUpon>ucThiTracNghiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Module\hocLuatGiaoThong.resx">
       <DependentUpon>hocLuatGiaoThong.cs</DependentUpon>
@@ -216,6 +225,7 @@
     <None Include="Resources\thoat.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< refs/remotes/origin/master
     <None Include="Resources\add-icon %281%29.png" />
   </ItemGroup>
   <ItemGroup>
@@ -241,6 +251,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Edit-Document-icon.png" />
+=======
+    <None Include="Resources\redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\submit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thirr.png" />
+>>>>>>> add control
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

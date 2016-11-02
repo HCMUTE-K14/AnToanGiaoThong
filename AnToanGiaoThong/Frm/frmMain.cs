@@ -20,14 +20,13 @@ namespace AnToanGiaoThong.Frm
 
             InitializeComponent();
 
-            this.panel2.Controls.Add(new Module.HelloUser(um));
+            this.panel2.Controls.Add(new Module.ucHelloUser(curUser));
 
             new Classes.MoveFrame(this.panel6);
 
             InitMenu();
            
         }
-        
         private void InitMenu()
         {
             btnThiTracNghiem.click+=new ClickHandler(btnMenuClick);
@@ -78,8 +77,11 @@ namespace AnToanGiaoThong.Frm
             {
                 case "btnThiTracNghiem":
                     MessageBox.Show("btnThiTracNghiem");
+                    this.panel3.Controls.Clear();
+                    this.panel3.Controls.Add(new Module.ucThiTracNghiem());
                     break;
                 case "btnOnThi":
+                    this.panel3.Controls.Clear();
                     MessageBox.Show("btnOnThi");
                     break;
                 case "btnSoanDe":

@@ -58,11 +58,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Pristina", 16F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(118, 9);
+            this.label1.Location = new System.Drawing.Point(120, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 29);
+            this.label1.Size = new System.Drawing.Size(90, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "Sign in";
             // 
@@ -84,13 +84,13 @@
             this.btnSignup.BackColor = System.Drawing.Color.White;
             this.btnSignup.FlatAppearance.BorderSize = 0;
             this.btnSignup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignup.Font = new System.Drawing.Font("Pristina", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignup.Font = new System.Drawing.Font("Segoe Print", 13F, System.Drawing.FontStyle.Bold);
             this.btnSignup.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnSignup.Location = new System.Drawing.Point(33, 79);
+            this.btnSignup.Location = new System.Drawing.Point(3, 79);
             this.btnSignup.Name = "btnSignup";
-            this.btnSignup.Size = new System.Drawing.Size(74, 41);
+            this.btnSignup.Size = new System.Drawing.Size(104, 41);
             this.btnSignup.TabIndex = 6;
-            this.btnSignup.Text = "Sign up";
+            this.btnSignup.Text = "Signup";
             this.btnSignup.UseVisualStyleBackColor = false;
             this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
             // 
@@ -117,11 +117,11 @@
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(118)))), ((int)(((byte)(211)))));
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Pristina", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(155, 79);
+            this.btnLogin.Location = new System.Drawing.Point(113, 79);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(74, 41);
+            this.btnLogin.Size = new System.Drawing.Size(116, 41);
             this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;

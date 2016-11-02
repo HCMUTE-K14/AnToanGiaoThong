@@ -11,10 +11,10 @@ using AnToanGiaoThong.Classes;
 
 namespace AnToanGiaoThong.Module
 {
-    public partial class HelloUser : UserControl
+    public partial class ucHelloUser : UserControl
     {
         private UserModel um;
-        public HelloUser(UserModel um)
+        public ucHelloUser(UserModel um)
         {
             InitializeComponent();
             this.um=um;

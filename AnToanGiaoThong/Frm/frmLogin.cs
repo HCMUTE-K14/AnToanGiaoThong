@@ -48,6 +48,7 @@ namespace AnToanGiaoThong.Frm
             um.Quequan=dt.Rows[0][4].ToString();
             um.Avatar=(byte[])dt.Rows[0][5];
 
+            this.Hide();     
             new frmMain(um).ShowDialog();
             this.Close();
 
