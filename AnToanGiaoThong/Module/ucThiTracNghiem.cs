@@ -15,6 +15,14 @@ namespace AnToanGiaoThong.Module
         public ucThiTracNghiem()
         {
             InitializeComponent();
+
+            panel1.AutoScroll=false;
+            panel1.HorizontalScroll.Enabled=false;
+            panel1.HorizontalScroll.Visible=false;
+            panel1.HorizontalScroll.Maximum=0;
+            panel1.AutoScroll=true;
+
+            //  vScrollBar1.Scroll+=(sender, e) => { this.panel1.VerticalScroll.Value=vScrollBar1.Value; };
         }
     }
 }
