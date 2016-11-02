@@ -225,7 +225,6 @@
     <None Include="Resources\thoat.png" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< refs/remotes/origin/master
     <None Include="Resources\add-icon %281%29.png" />
   </ItemGroup>
   <ItemGroup>
@@ -251,7 +250,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Edit-Document-icon.png" />
-=======
     <None Include="Resources\redo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -268,7 +266,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\thirr.png" />
->>>>>>> add control
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

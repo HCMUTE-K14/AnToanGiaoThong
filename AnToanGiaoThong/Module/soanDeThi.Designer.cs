@@ -126,7 +126,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = global::AnToanGiaoThong.Properties.Resources.folder_printer_icon;
+          
             this.button3.Location = new System.Drawing.Point(598, 451);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 45);
@@ -136,7 +136,7 @@
             // btnXuatPDF
             // 
             this.btnXuatPDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXuatPDF.Image = global::AnToanGiaoThong.Properties.Resources.pdf_icon__1_;
+//           
             this.btnXuatPDF.Location = new System.Drawing.Point(406, 451);
             this.btnXuatPDF.Name = "btnXuatPDF";
             this.btnXuatPDF.Size = new System.Drawing.Size(75, 45);
@@ -146,7 +146,7 @@
             // btnHuyDeThi
             // 
             this.btnHuyDeThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuyDeThi.Image = global::AnToanGiaoThong.Properties.Resources.File_Delete_icon;
+            //
             this.btnHuyDeThi.Location = new System.Drawing.Point(248, 243);
             this.btnHuyDeThi.Name = "btnHuyDeThi";
             this.btnHuyDeThi.Size = new System.Drawing.Size(48, 40);
@@ -156,8 +156,8 @@
             // btnXuat
             // 
             this.btnXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXuat.Image = global::AnToanGiaoThong.Properties.Resources.document_arrow_right_icon;
-            this.btnXuat.Location = new System.Drawing.Point(248, 175);
+            //
+            this.btnXuat.Location=new System.Drawing.Point(248, 175);
             this.btnXuat.Name = "btnXuat";
             this.btnXuat.Size = new System.Drawing.Size(48, 40);
             this.btnXuat.TabIndex = 18;
@@ -166,7 +166,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::AnToanGiaoThong.Properties.Resources.Close_2_icon;
+            //
             this.button2.Location = new System.Drawing.Point(145, 451);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 45);
@@ -176,7 +176,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Image = global::AnToanGiaoThong.Properties.Resources.add_icon__1_;
+           // 
             this.btnAdd.Location = new System.Drawing.Point(26, 451);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 45);
