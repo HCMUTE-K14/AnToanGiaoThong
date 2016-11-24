@@ -30,19 +30,19 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.mHeaderButton1 = new ucHeaderButton.mHeaderButton();
             this.btnSoanDe = new ucButtonMenu.mButtonMenu();
             this.btnThoat = new ucButtonMenu.mButtonMenu();
             this.btnThongKe = new ucButtonMenu.mButtonMenu();
             this.btnDiemNong = new ucButtonMenu.mButtonMenu();
             this.btnKinhNghiem = new ucButtonMenu.mButtonMenu();
             this.btnLuat = new ucButtonMenu.mButtonMenu();
-            this.btnOnThi = new ucButtonMenu.mButtonMenu();
             this.btnThiTracNghiem = new ucButtonMenu.mButtonMenu();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.mHeaderButton1 = new ucHeaderButton.mHeaderButton();
+            this.btnTrangChu = new ucButtonMenu.mButtonMenu();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -61,90 +61,18 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.panel4.Controls.Add(this.btnTrangChu);
             this.panel4.Controls.Add(this.btnSoanDe);
             this.panel4.Controls.Add(this.btnThoat);
             this.panel4.Controls.Add(this.btnThongKe);
             this.panel4.Controls.Add(this.btnDiemNong);
             this.panel4.Controls.Add(this.btnKinhNghiem);
             this.panel4.Controls.Add(this.btnLuat);
-            this.panel4.Controls.Add(this.btnOnThi);
             this.panel4.Controls.Add(this.btnThiTracNghiem);
             this.panel4.Location = new System.Drawing.Point(0, 80);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(213, 375);
+            this.panel4.Size = new System.Drawing.Size(213, 426);
             this.panel4.TabIndex = 1;
-            // 
-            // btnSoanDe
-            // 
-            this.btnSoanDe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.btnSoanDe.ForeColor = System.Drawing.Color.LightGray;
-            this.btnSoanDe.Location = new System.Drawing.Point(0, 95);
-            this.btnSoanDe.Name = "btnSoanDe";
-            this.btnSoanDe.Size = new System.Drawing.Size(205, 40);
-            this.btnSoanDe.TabIndex = 7;
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.btnThoat.ForeColor = System.Drawing.Color.LightGray;
-            this.btnThoat.Location = new System.Drawing.Point(0, 325);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(205, 40);
-            this.btnThoat.TabIndex = 6;
-            // 
-            // btnThongKe
-            // 
-            this.btnThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.btnThongKe.ForeColor = System.Drawing.Color.LightGray;
-            this.btnThongKe.Location = new System.Drawing.Point(0, 279);
-            this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Size = new System.Drawing.Size(205, 40);
-            this.btnThongKe.TabIndex = 5;
-            // 
-            // btnDiemNong
-            // 
-            this.btnDiemNong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.btnDiemNong.ForeColor = System.Drawing.Color.LightGray;
-            this.btnDiemNong.Location = new System.Drawing.Point(0, 233);
-            this.btnDiemNong.Name = "btnDiemNong";
-            this.btnDiemNong.Size = new System.Drawing.Size(205, 40);
-            this.btnDiemNong.TabIndex = 4;
-            // 
-            // btnKinhNghiem
-            // 
-            this.btnKinhNghiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.btnKinhNghiem.ForeColor = System.Drawing.Color.LightGray;
-            this.btnKinhNghiem.Location = new System.Drawing.Point(0, 187);
-            this.btnKinhNghiem.Name = "btnKinhNghiem";
-            this.btnKinhNghiem.Size = new System.Drawing.Size(205, 40);
-            this.btnKinhNghiem.TabIndex = 3;
-            // 
-            // btnLuat
-            // 
-            this.btnLuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.btnLuat.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLuat.Location = new System.Drawing.Point(0, 141);
-            this.btnLuat.Name = "btnLuat";
-            this.btnLuat.Size = new System.Drawing.Size(205, 40);
-            this.btnLuat.TabIndex = 2;
-            // 
-            // btnOnThi
-            // 
-            this.btnOnThi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.btnOnThi.ForeColor = System.Drawing.Color.LightGray;
-            this.btnOnThi.Location = new System.Drawing.Point(0, 49);
-            this.btnOnThi.Name = "btnOnThi";
-            this.btnOnThi.Size = new System.Drawing.Size(205, 40);
-            this.btnOnThi.TabIndex = 1;
-            // 
-            // btnThiTracNghiem
-            // 
-            this.btnThiTracNghiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.btnThiTracNghiem.ForeColor = System.Drawing.Color.LightGray;
-            this.btnThiTracNghiem.Location = new System.Drawing.Point(0, 3);
-            this.btnThiTracNghiem.Name = "btnThiTracNghiem";
-            this.btnThiTracNghiem.Size = new System.Drawing.Size(205, 40);
-            this.btnThiTracNghiem.TabIndex = 0;
             // 
             // panel2
             // 
@@ -190,6 +118,78 @@
             this.mHeaderButton1.Size = new System.Drawing.Size(48, 19);
             this.mHeaderButton1.TabIndex = 0;
             // 
+            // btnSoanDe
+            // 
+            this.btnSoanDe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnSoanDe.ForeColor = System.Drawing.Color.LightGray;
+            this.btnSoanDe.Location = new System.Drawing.Point(5, 99);
+            this.btnSoanDe.Name = "btnSoanDe";
+            this.btnSoanDe.Size = new System.Drawing.Size(205, 40);
+            this.btnSoanDe.TabIndex = 7;
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnThoat.ForeColor = System.Drawing.Color.LightGray;
+            this.btnThoat.Location = new System.Drawing.Point(5, 329);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(205, 40);
+            this.btnThoat.TabIndex = 6;
+            // 
+            // btnThongKe
+            // 
+            this.btnThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnThongKe.ForeColor = System.Drawing.Color.LightGray;
+            this.btnThongKe.Location = new System.Drawing.Point(5, 283);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(205, 40);
+            this.btnThongKe.TabIndex = 5;
+            // 
+            // btnDiemNong
+            // 
+            this.btnDiemNong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnDiemNong.ForeColor = System.Drawing.Color.LightGray;
+            this.btnDiemNong.Location = new System.Drawing.Point(5, 237);
+            this.btnDiemNong.Name = "btnDiemNong";
+            this.btnDiemNong.Size = new System.Drawing.Size(205, 40);
+            this.btnDiemNong.TabIndex = 4;
+            // 
+            // btnKinhNghiem
+            // 
+            this.btnKinhNghiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnKinhNghiem.ForeColor = System.Drawing.Color.LightGray;
+            this.btnKinhNghiem.Location = new System.Drawing.Point(5, 191);
+            this.btnKinhNghiem.Name = "btnKinhNghiem";
+            this.btnKinhNghiem.Size = new System.Drawing.Size(205, 40);
+            this.btnKinhNghiem.TabIndex = 3;
+            // 
+            // btnLuat
+            // 
+            this.btnLuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnLuat.ForeColor = System.Drawing.Color.LightGray;
+            this.btnLuat.Location = new System.Drawing.Point(5, 145);
+            this.btnLuat.Name = "btnLuat";
+            this.btnLuat.Size = new System.Drawing.Size(205, 40);
+            this.btnLuat.TabIndex = 2;
+            // 
+            // btnThiTracNghiem
+            // 
+            this.btnThiTracNghiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnThiTracNghiem.ForeColor = System.Drawing.Color.LightGray;
+            this.btnThiTracNghiem.Location = new System.Drawing.Point(0, 53);
+            this.btnThiTracNghiem.Name = "btnThiTracNghiem";
+            this.btnThiTracNghiem.Size = new System.Drawing.Size(205, 40);
+            this.btnThiTracNghiem.TabIndex = 0;
+            // 
+            // btnTrangChu
+            // 
+            this.btnTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnTrangChu.ForeColor = System.Drawing.Color.LightGray;
+            this.btnTrangChu.Location = new System.Drawing.Point(0, 3);
+            this.btnTrangChu.Name = "btnTrangChu";
+            this.btnTrangChu.Size = new System.Drawing.Size(205, 40);
+            this.btnTrangChu.TabIndex = 8;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,7 +225,7 @@
         private ucButtonMenu.mButtonMenu btnKinhNghiem;
         private ucButtonMenu.mButtonMenu btnLuat;
         private ucButtonMenu.mButtonMenu btnSoanDe;
-        private ucButtonMenu.mButtonMenu btnOnThi;
         private Module.ucHelloUser helloUser1;
+        private ucButtonMenu.mButtonMenu btnTrangChu;
     }
 }

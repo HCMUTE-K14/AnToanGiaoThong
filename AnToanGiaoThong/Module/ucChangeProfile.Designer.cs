@@ -60,6 +60,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Đổi mật khẩu";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -164,7 +165,7 @@
             this.lblQueQuan.Size = new System.Drawing.Size(126, 20);
             this.lblQueQuan.TabIndex = 18;
             // 
-            // ChangeProfile
+            // ucChangeProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -181,7 +182,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "ChangeProfile";
+            this.Name = "ucChangeProfile";
             this.Size = new System.Drawing.Size(431, 147);
             this.Load += new System.EventHandler(this.ChangeProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

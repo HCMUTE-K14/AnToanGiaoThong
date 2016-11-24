@@ -34,11 +34,6 @@ namespace AnToanGiaoThong.Frm
             btnThiTracNghiem.SetImage(AnToanGiaoThong.Properties.Resources.thitracnghiem);
             btnThiTracNghiem.SetText("Thi Trắc Nghiệm");
 
-            btnOnThi.click+=new ClickHandler(btnMenuClick);
-            btnOnThi.Click+=new EventHandler(btnMenuClick);
-            btnOnThi.SetImage(AnToanGiaoThong.Properties.Resources.onthi);
-            btnOnThi.SetText("Ôn Thi");
-
             btnSoanDe.click+=new ClickHandler(btnMenuClick);
             btnSoanDe.Click+=new EventHandler(btnMenuClick);
             btnSoanDe.SetImage(AnToanGiaoThong.Properties.Resources.soande);
@@ -68,6 +63,11 @@ namespace AnToanGiaoThong.Frm
             btnThoat.Click+=new EventHandler(btnMenuClick);
             btnThoat.SetImage(AnToanGiaoThong.Properties.Resources.thoat);
             btnThoat.SetText("Thoát");
+
+            btnTrangChu.click+=new ClickHandler(btnMenuClick);
+            btnTrangChu.Click+=new EventHandler(btnMenuClick);
+            btnTrangChu.SetImage(AnToanGiaoThong.Properties.Resources.Home_64px);
+            btnTrangChu.SetText("Trang chủ");
 
         }
         private void btnMenuClick(object sender, EventArgs e)

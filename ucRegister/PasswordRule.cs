@@ -45,19 +45,19 @@ namespace ucRegister
 
             if (ishaslenRequire==false)
             {
-                reason="5-15 characters (15) characters";
+                reason="Từ 5-15 kí tự";
             }
             else if (ishaslowerChar==false)
             {
-                reason="Contain at least one lower character (a-z).";
+                reason="Có ít nhất 1 kí tự thường";
             }
             else if (ishasupperChar==false)
             {
-                reason="Contain at least one upper character(A-Z)";
+                reason="Có ít nhất 1 kí tự hoa";
             }
             else if (isdemicalDigit==false)
             {
-                reason="Contain at least one numeric (0-9)";
+                reason="Có ít nhất 1 kí tự số";
             }
 
 

@@ -51,6 +51,12 @@
     <Compile Include="Classes\Function.cs" />
     <Compile Include="Classes\MoveFrame.cs" />
     <Compile Include="Classes\UserModel.cs" />
+    <Compile Include="Frm\frmDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\frmDoiMatKhau.Designer.cs">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm\frmDoiProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,12 @@
     </Compile>
     <Compile Include="Module\ucChangeProfile.Designer.cs">
       <DependentUpon>ucChangeProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ucDoiMatKhau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\ucDoiMatKhau.Designer.cs">
+      <DependentUpon>ucDoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="Module\ucHelloUser.cs">
       <SubType>UserControl</SubType>
@@ -113,6 +125,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm\frmDoiMatKhau.resx">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm\frmDoiProfile.resx">
       <DependentUpon>frmDoiProfile.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Module\ucChangeProfile.resx">
       <DependentUpon>ucChangeProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\ucDoiMatKhau.resx">
+      <DependentUpon>ucDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Module\ucHelloUser.resx">
       <DependentUpon>ucHelloUser.cs</DependentUpon>
@@ -266,6 +284,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\thirr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_64px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

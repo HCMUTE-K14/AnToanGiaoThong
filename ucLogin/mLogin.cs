@@ -22,6 +22,7 @@ namespace ucLogin
 
         public string userid;
         public string password;
+        public string datasource;
 
         public mLogin()
         {
@@ -35,6 +36,8 @@ namespace ucLogin
                 userid=txtUsername.Text.Trim();
                 
                 password=txtPassword.Text.Trim();
+
+                datasource=textBox1.Text.Trim();
 
                 login(this, e);
             }

@@ -51,10 +51,10 @@
             this.txtDoiPro.LinkColor = System.Drawing.SystemColors.Control;
             this.txtDoiPro.Location = new System.Drawing.Point(77, 51);
             this.txtDoiPro.Name = "txtDoiPro";
-            this.txtDoiPro.Size = new System.Drawing.Size(55, 13);
+            this.txtDoiPro.Size = new System.Drawing.Size(78, 13);
             this.txtDoiPro.TabIndex = 2;
             this.txtDoiPro.TabStop = true;
-            this.txtDoiPro.Text = "Đổi Profile";
+            this.txtDoiPro.Text = "Trang Cá nhân";
             this.txtDoiPro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.txtDoiPro_LinkClicked);
             // 
             // pictureBox1
@@ -65,14 +65,14 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // HelloUser
+            // ucHelloUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.txtDoiPro);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "HelloUser";
+            this.Name = "ucHelloUser";
             this.Size = new System.Drawing.Size(213, 73);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

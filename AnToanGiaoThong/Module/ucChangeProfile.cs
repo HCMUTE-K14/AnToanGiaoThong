@@ -63,5 +63,10 @@ namespace AnToanGiaoThong.Module
         {
             suaClick(this.label12, this.lblQueQuan);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new Frm.frmDoiMatKhau().ShowDialog();
+        }
     }
 }

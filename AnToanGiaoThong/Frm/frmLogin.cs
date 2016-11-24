@@ -66,7 +66,7 @@ namespace AnToanGiaoThong.Frm
         }
         private void label2_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            ;
         }
 
         private void mLogin1_Load(object sender, EventArgs e)
