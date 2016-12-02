@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.mHeaderButton1 = new ucHeaderButton.mHeaderButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.mHeaderButton1 = new ucHeaderButton.mHeaderButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.ucDoiMatKhau1 = new AnToanGiaoThong.Module.ucDoiMatKhau();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +47,21 @@
             this.panel1.Size = new System.Drawing.Size(327, 47);
             this.panel1.TabIndex = 5;
             // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(0, 53);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(323, 203);
+            this.panel2.TabIndex = 6;
+            // 
+            // mHeaderButton1
+            // 
+            this.mHeaderButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(164)))), ((int)(((byte)(228)))));
+            this.mHeaderButton1.Location = new System.Drawing.Point(274, 11);
+            this.mHeaderButton1.Name = "mHeaderButton1";
+            this.mHeaderButton1.Size = new System.Drawing.Size(48, 19);
+            this.mHeaderButton1.TabIndex = 2;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -58,24 +73,9 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Đổi mật khẩu";
             // 
-            // mHeaderButton1
-            // 
-            this.mHeaderButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(164)))), ((int)(((byte)(228)))));
-            this.mHeaderButton1.Location = new System.Drawing.Point(274, 11);
-            this.mHeaderButton1.Name = "mHeaderButton1";
-            this.mHeaderButton1.Size = new System.Drawing.Size(48, 19);
-            this.mHeaderButton1.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(0, 53);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(323, 203);
-            this.panel2.TabIndex = 6;
-            // 
             // ucDoiMatKhau1
             // 
-            this.ucDoiMatKhau1.Location = new System.Drawing.Point(-1, 50);
+            this.ucDoiMatKhau1.Location = new System.Drawing.Point(0, 50);
             this.ucDoiMatKhau1.Name = "ucDoiMatKhau1";
             this.ucDoiMatKhau1.Size = new System.Drawing.Size(323, 203);
             this.ucDoiMatKhau1.TabIndex = 6;

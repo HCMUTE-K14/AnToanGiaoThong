@@ -48,7 +48,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(302, 63);
+            this.richTextBox1.Location = new System.Drawing.Point(383, 75);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(489, 382);
             this.richTextBox1.TabIndex = 17;
@@ -58,7 +58,7 @@
             // 
             this.btnSoan.BackColor = System.Drawing.Color.Teal;
             this.btnSoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSoan.Location = new System.Drawing.Point(158, 9);
+            this.btnSoan.Location = new System.Drawing.Point(239, 21);
             this.btnSoan.Name = "btnSoan";
             this.btnSoan.Size = new System.Drawing.Size(75, 33);
             this.btnSoan.TabIndex = 16;
@@ -72,7 +72,7 @@
             this.Cau,
             this.MaCau,
             this.DapAn});
-            this.dataGridView1.Location = new System.Drawing.Point(2, 63);
+            this.dataGridView1.Location = new System.Drawing.Point(83, 75);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(240, 382);
             this.dataGridView1.TabIndex = 13;
@@ -99,7 +99,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 15);
+            this.label1.Location = new System.Drawing.Point(87, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 20);
             this.label1.TabIndex = 12;
@@ -108,7 +108,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(74, 13);
+            this.numericUpDown1.Location = new System.Drawing.Point(155, 25);
             this.numericUpDown1.Minimum = new decimal(new int[] {
             10,
             0,
@@ -126,8 +126,8 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-          
-            this.button3.Location = new System.Drawing.Point(598, 451);
+            this.button3.Image = global::AnToanGiaoThong.Properties.Resources.folder_printer_icon;
+            this.button3.Location = new System.Drawing.Point(679, 463);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 45);
             this.button3.TabIndex = 22;
@@ -136,8 +136,8 @@
             // btnXuatPDF
             // 
             this.btnXuatPDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-//           
-            this.btnXuatPDF.Location = new System.Drawing.Point(406, 451);
+            this.btnXuatPDF.Image = global::AnToanGiaoThong.Properties.Resources.pdf_icon__1_;
+            this.btnXuatPDF.Location = new System.Drawing.Point(487, 463);
             this.btnXuatPDF.Name = "btnXuatPDF";
             this.btnXuatPDF.Size = new System.Drawing.Size(75, 45);
             this.btnXuatPDF.TabIndex = 20;
@@ -146,8 +146,8 @@
             // btnHuyDeThi
             // 
             this.btnHuyDeThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //
-            this.btnHuyDeThi.Location = new System.Drawing.Point(248, 243);
+            this.btnHuyDeThi.Image = global::AnToanGiaoThong.Properties.Resources.File_Delete_icon;
+            this.btnHuyDeThi.Location = new System.Drawing.Point(329, 255);
             this.btnHuyDeThi.Name = "btnHuyDeThi";
             this.btnHuyDeThi.Size = new System.Drawing.Size(48, 40);
             this.btnHuyDeThi.TabIndex = 19;
@@ -156,8 +156,8 @@
             // btnXuat
             // 
             this.btnXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //
-            this.btnXuat.Location=new System.Drawing.Point(248, 175);
+            this.btnXuat.Image = global::AnToanGiaoThong.Properties.Resources.document_arrow_right_icon;
+            this.btnXuat.Location = new System.Drawing.Point(329, 187);
             this.btnXuat.Name = "btnXuat";
             this.btnXuat.Size = new System.Drawing.Size(48, 40);
             this.btnXuat.TabIndex = 18;
@@ -166,8 +166,8 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //
-            this.button2.Location = new System.Drawing.Point(145, 451);
+            this.button2.Image = global::AnToanGiaoThong.Properties.Resources.Close_2_icon;
+            this.button2.Location = new System.Drawing.Point(226, 463);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 45);
             this.button2.TabIndex = 15;
@@ -176,8 +176,8 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-           // 
-            this.btnAdd.Location = new System.Drawing.Point(26, 451);
+            this.btnAdd.Image = global::AnToanGiaoThong.Properties.Resources.add_icon__1_;
+            this.btnAdd.Location = new System.Drawing.Point(107, 463);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 45);
             this.btnAdd.TabIndex = 14;
@@ -199,18 +199,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numericUpDown1);
             this.Name = "soanDeThi";
-            this.Size = new System.Drawing.Size(794, 527);
+            this.Size = new System.Drawing.Size(951, 566);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
-            this.btnXuat.Image=global::AnToanGiaoThong.Properties.Resources.document_arrow_right_icon;
-            this.button2.Image=global::AnToanGiaoThong.Properties.Resources.Close_2_icon;
-            this.btnHuyDeThi.Image=global::AnToanGiaoThong.Properties.Resources.File_Delete_icon;
-            this.btnAdd.Image=global::AnToanGiaoThong.Properties.Resources.add_icon__1_;
-            this.btnXuatPDF.Image=global::AnToanGiaoThong.Properties.Resources.pdf_icon__1_;
-            this.button3.Image=global::AnToanGiaoThong.Properties.Resources.folder_printer_icon;
 
         }
 

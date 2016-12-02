@@ -30,11 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.mHeaderButton1 = new ucHeaderButton.mHeaderButton();
+            this.btnTrangChu = new ucButtonMenu.mButtonMenu();
             this.btnSoanDe = new ucButtonMenu.mButtonMenu();
             this.btnThoat = new ucButtonMenu.mButtonMenu();
             this.btnThongKe = new ucButtonMenu.mButtonMenu();
@@ -42,7 +38,11 @@
             this.btnKinhNghiem = new ucButtonMenu.mButtonMenu();
             this.btnLuat = new ucButtonMenu.mButtonMenu();
             this.btnThiTracNghiem = new ucButtonMenu.mButtonMenu();
-            this.btnTrangChu = new ucButtonMenu.mButtonMenu();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.mHeaderButton1 = new ucHeaderButton.mHeaderButton();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -55,7 +55,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(0, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(213, 527);
+            this.panel1.Size = new System.Drawing.Size(213, 563);
             this.panel1.TabIndex = 2;
             // 
             // panel4
@@ -74,49 +74,14 @@
             this.panel4.Size = new System.Drawing.Size(213, 426);
             this.panel4.TabIndex = 1;
             // 
-            // panel2
+            // btnTrangChu
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(70)))), ((int)(((byte)(91)))));
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(213, 74);
-            this.panel2.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(211, 30);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(794, 527);
-            this.panel3.TabIndex = 3;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(164)))), ((int)(((byte)(228)))));
-            this.panel6.Controls.Add(this.label1);
-            this.panel6.Controls.Add(this.mHeaderButton1);
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1005, 31);
-            this.panel6.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(384, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(223, 21);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Phần mềm An Toàn Giao Thông";
-            // 
-            // mHeaderButton1
-            // 
-            this.mHeaderButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(164)))), ((int)(((byte)(228)))));
-            this.mHeaderButton1.Location = new System.Drawing.Point(945, 5);
-            this.mHeaderButton1.Name = "mHeaderButton1";
-            this.mHeaderButton1.Size = new System.Drawing.Size(48, 19);
-            this.mHeaderButton1.TabIndex = 0;
+            this.btnTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.btnTrangChu.ForeColor = System.Drawing.Color.LightGray;
+            this.btnTrangChu.Location = new System.Drawing.Point(0, 3);
+            this.btnTrangChu.Name = "btnTrangChu";
+            this.btnTrangChu.Size = new System.Drawing.Size(205, 40);
+            this.btnTrangChu.TabIndex = 8;
             // 
             // btnSoanDe
             // 
@@ -181,20 +146,55 @@
             this.btnThiTracNghiem.Size = new System.Drawing.Size(205, 40);
             this.btnThiTracNghiem.TabIndex = 0;
             // 
-            // btnTrangChu
+            // panel2
             // 
-            this.btnTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.btnTrangChu.ForeColor = System.Drawing.Color.LightGray;
-            this.btnTrangChu.Location = new System.Drawing.Point(0, 3);
-            this.btnTrangChu.Name = "btnTrangChu";
-            this.btnTrangChu.Size = new System.Drawing.Size(205, 40);
-            this.btnTrangChu.TabIndex = 8;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(70)))), ((int)(((byte)(91)))));
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(213, 74);
+            this.panel2.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(211, 30);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(951, 566);
+            this.panel3.TabIndex = 3;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(164)))), ((int)(((byte)(228)))));
+            this.panel6.Controls.Add(this.label1);
+            this.panel6.Controls.Add(this.mHeaderButton1);
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1005, 31);
+            this.panel6.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Sitka Heading", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(384, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(223, 21);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Phần mềm An Toàn Giao Thông";
+            // 
+            // mHeaderButton1
+            // 
+            this.mHeaderButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(164)))), ((int)(((byte)(228)))));
+            this.mHeaderButton1.Location = new System.Drawing.Point(945, 5);
+            this.mHeaderButton1.Name = "mHeaderButton1";
+            this.mHeaderButton1.Size = new System.Drawing.Size(48, 19);
+            this.mHeaderButton1.TabIndex = 0;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1005, 558);
+            this.ClientSize = new System.Drawing.Size(1166, 594);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);

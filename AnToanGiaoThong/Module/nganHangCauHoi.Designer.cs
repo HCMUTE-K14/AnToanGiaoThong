@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnHuy = new System.Windows.Forms.Button();
@@ -89,13 +88,14 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(15, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(766, 380);
+            this.groupBox1.Size = new System.Drawing.Size(927, 405);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
             // btnHuy
             // 
             this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy.Image = global::AnToanGiaoThong.Properties.Resources.Close_2_icon;
             this.btnHuy.Location = new System.Drawing.Point(685, 322);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 42);
@@ -105,6 +105,7 @@
             // btnLuu
             // 
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Image = global::AnToanGiaoThong.Properties.Resources.Actions_document_save_icon;
             this.btnLuu.Location = new System.Drawing.Point(606, 322);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 42);
@@ -114,6 +115,7 @@
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Image = global::AnToanGiaoThong.Properties.Resources.File_Delete_icon;
             this.btnXoa.Location = new System.Drawing.Point(527, 322);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 42);
@@ -123,6 +125,7 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Image = global::AnToanGiaoThong.Properties.Resources.Edit_Document_icon;
             this.btnSua.Location = new System.Drawing.Point(448, 322);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 42);
@@ -132,6 +135,7 @@
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Image = global::AnToanGiaoThong.Properties.Resources.add_icon__1_;
             this.btnThem.Location = new System.Drawing.Point(369, 322);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 42);
@@ -274,9 +278,9 @@
             // 
             this.groupBox2.Controls.Add(this.richTextBox2);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(15, 392);
+            this.groupBox2.Location = new System.Drawing.Point(9, 423);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(766, 132);
+            this.groupBox2.Size = new System.Drawing.Size(939, 140);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chi tiết câu hỏi";
@@ -285,7 +289,7 @@
             // 
             this.richTextBox2.Location = new System.Drawing.Point(9, 22);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(751, 104);
+            this.richTextBox2.Size = new System.Drawing.Size(924, 104);
             this.richTextBox2.TabIndex = 0;
             this.richTextBox2.Text = "";
             // 
@@ -296,22 +300,12 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "nganHangCauHoi";
-            this.Size = new System.Drawing.Size(794, 527);
+            this.Size = new System.Drawing.Size(951, 566);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
-
-            this.btnLuu.Image=global::AnToanGiaoThong.Properties.Resources.Actions_document_save_icon;
-
-            this.btnXoa.Image=AnToanGiaoThong.Properties.Resources.File_Delete_icon;
-
-            this.btnThem.Image=AnToanGiaoThong.Properties.Resources.add_icon__1_;
-
-            this.btnSua.Image=global::AnToanGiaoThong.Properties.Resources.Edit_Document_icon;
-
-            this.btnHuy.Image=global::AnToanGiaoThong.Properties.Resources.Close_2_icon;
 
         }
 

@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Chương 1");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Điều 9");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Điều 10");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Chương 2", new System.Windows.Forms.TreeNode[] {
-            treeNode2,
-            treeNode3});
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("21/12/2015");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("1/6/2016");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("300000-500000");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("1000000-1500000");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Chương 1");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Điều 9");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Điều 10");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Chương 2", new System.Windows.Forms.TreeNode[] {
+            treeNode10,
+            treeNode11});
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("21/12/2015");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("1/6/2016");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("300000-500000");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("1000000-1500000");
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabLuat = new System.Windows.Forms.TabPage();
-            this.tabThongtu = new System.Windows.Forms.TabPage();
-            this.tabTraCuuMucPhat = new System.Windows.Forms.TabPage();
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.tabThongtu = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.treeView2 = new System.Windows.Forms.TreeView();
+            this.tabTraCuuMucPhat = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
@@ -69,7 +69,7 @@
             this.tabControl1.Location = new System.Drawing.Point(3, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(791, 507);
+            this.tabControl1.Size = new System.Drawing.Size(951, 566);
             this.tabControl1.TabIndex = 0;
             // 
             // tabLuat
@@ -82,10 +82,57 @@
             this.tabLuat.Location = new System.Drawing.Point(4, 29);
             this.tabLuat.Name = "tabLuat";
             this.tabLuat.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLuat.Size = new System.Drawing.Size(783, 474);
+            this.tabLuat.Size = new System.Drawing.Size(943, 533);
             this.tabLuat.TabIndex = 0;
             this.tabLuat.Text = "Luật giao thông";
             this.tabLuat.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(221, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Nội dung";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Tra cứu";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(225, 30);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(552, 409);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
+            // 
+            // treeView1
+            // 
+            this.treeView1.Location = new System.Drawing.Point(15, 30);
+            this.treeView1.Name = "treeView1";
+            treeNode9.Name = "Node0";
+            treeNode9.Text = "Chương 1";
+            treeNode10.Name = "Node3";
+            treeNode10.Text = "Điều 9";
+            treeNode11.Checked = true;
+            treeNode11.Name = "Node4";
+            treeNode11.Text = "Điều 10";
+            treeNode12.Name = "Node1";
+            treeNode12.Text = "Chương 2";
+            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode9,
+            treeNode12});
+            this.treeView1.Size = new System.Drawing.Size(203, 409);
+            this.treeView1.TabIndex = 0;
             // 
             // tabThongtu
             // 
@@ -101,67 +148,6 @@
             this.tabThongtu.TabIndex = 1;
             this.tabThongtu.Text = "Thông tư";
             this.tabThongtu.UseVisualStyleBackColor = true;
-            // 
-            // tabTraCuuMucPhat
-            // 
-            this.tabTraCuuMucPhat.Controls.Add(this.label5);
-            this.tabTraCuuMucPhat.Controls.Add(this.label6);
-            this.tabTraCuuMucPhat.Controls.Add(this.richTextBox3);
-            this.tabTraCuuMucPhat.Controls.Add(this.treeView3);
-            this.tabTraCuuMucPhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabTraCuuMucPhat.Location = new System.Drawing.Point(4, 29);
-            this.tabTraCuuMucPhat.Name = "tabTraCuuMucPhat";
-            this.tabTraCuuMucPhat.Size = new System.Drawing.Size(783, 474);
-            this.tabTraCuuMucPhat.TabIndex = 2;
-            this.tabTraCuuMucPhat.Text = "Tra cứu mức phạt";
-            this.tabTraCuuMucPhat.UseVisualStyleBackColor = true;
-            // 
-            // treeView1
-            // 
-            this.treeView1.Location = new System.Drawing.Point(15, 30);
-            this.treeView1.Name = "treeView1";
-            treeNode1.Name = "Node0";
-            treeNode1.Text = "Chương 1";
-            treeNode2.Name = "Node3";
-            treeNode2.Text = "Điều 9";
-            treeNode3.Checked = true;
-            treeNode3.Name = "Node4";
-            treeNode3.Text = "Điều 10";
-            treeNode4.Name = "Node1";
-            treeNode4.Text = "Chương 2";
-            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode4});
-            this.treeView1.Size = new System.Drawing.Size(203, 409);
-            this.treeView1.TabIndex = 0;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(225, 30);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(552, 409);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Tra cứu";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(221, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Nội dung";
             // 
             // label3
             // 
@@ -195,15 +181,29 @@
             // 
             this.treeView2.Location = new System.Drawing.Point(12, 44);
             this.treeView2.Name = "treeView2";
-            treeNode5.Name = "Node0";
-            treeNode5.Text = "21/12/2015";
-            treeNode6.Name = "Node1";
-            treeNode6.Text = "1/6/2016";
+            treeNode13.Name = "Node0";
+            treeNode13.Text = "21/12/2015";
+            treeNode14.Name = "Node1";
+            treeNode14.Text = "1/6/2016";
             this.treeView2.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode5,
-            treeNode6});
+            treeNode13,
+            treeNode14});
             this.treeView2.Size = new System.Drawing.Size(203, 409);
             this.treeView2.TabIndex = 4;
+            // 
+            // tabTraCuuMucPhat
+            // 
+            this.tabTraCuuMucPhat.Controls.Add(this.label5);
+            this.tabTraCuuMucPhat.Controls.Add(this.label6);
+            this.tabTraCuuMucPhat.Controls.Add(this.richTextBox3);
+            this.tabTraCuuMucPhat.Controls.Add(this.treeView3);
+            this.tabTraCuuMucPhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabTraCuuMucPhat.Location = new System.Drawing.Point(4, 29);
+            this.tabTraCuuMucPhat.Name = "tabTraCuuMucPhat";
+            this.tabTraCuuMucPhat.Size = new System.Drawing.Size(783, 474);
+            this.tabTraCuuMucPhat.TabIndex = 2;
+            this.tabTraCuuMucPhat.Text = "Tra cứu mức phạt";
+            this.tabTraCuuMucPhat.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -237,13 +237,13 @@
             // 
             this.treeView3.Location = new System.Drawing.Point(12, 44);
             this.treeView3.Name = "treeView3";
-            treeNode7.Name = "Node0";
-            treeNode7.Text = "300000-500000";
-            treeNode8.Name = "Node1";
-            treeNode8.Text = "1000000-1500000";
+            treeNode15.Name = "Node0";
+            treeNode15.Text = "300000-500000";
+            treeNode16.Name = "Node1";
+            treeNode16.Text = "1000000-1500000";
             this.treeView3.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode7,
-            treeNode8});
+            treeNode15,
+            treeNode16});
             this.treeView3.Size = new System.Drawing.Size(203, 409);
             this.treeView3.TabIndex = 4;
             // 
@@ -253,7 +253,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl1);
             this.Name = "hocLuatGiaoThong";
-            this.Size = new System.Drawing.Size(794, 527);
+            this.Size = new System.Drawing.Size(951, 566);
             this.tabControl1.ResumeLayout(false);
             this.tabLuat.ResumeLayout(false);
             this.tabLuat.PerformLayout();

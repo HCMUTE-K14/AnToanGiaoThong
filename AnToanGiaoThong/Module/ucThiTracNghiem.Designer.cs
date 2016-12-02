@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucThiTracNghiem));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.radioButton45 = new System.Windows.Forms.RadioButton();
+            this.radioButton46 = new System.Windows.Forms.RadioButton();
+            this.radioButton47 = new System.Windows.Forms.RadioButton();
+            this.radioButton48 = new System.Windows.Forms.RadioButton();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel26 = new System.Windows.Forms.Panel();
             this.panel21 = new System.Windows.Forms.Panel();
             this.radioButton37 = new System.Windows.Forms.RadioButton();
             this.radioButton38 = new System.Windows.Forms.RadioButton();
@@ -109,14 +116,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnBatDau = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.radioButton45 = new System.Windows.Forms.RadioButton();
-            this.radioButton46 = new System.Windows.Forms.RadioButton();
-            this.radioButton47 = new System.Windows.Forms.RadioButton();
-            this.radioButton48 = new System.Windows.Forms.RadioButton();
-            this.label13 = new System.Windows.Forms.Label();
-            this.panel26 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel25.SuspendLayout();
             this.panel21.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -131,7 +132,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel25.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -148,10 +148,84 @@
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(566, 41);
+            this.panel1.Location = new System.Drawing.Point(636, 41);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(221, 416);
             this.panel1.TabIndex = 0;
+            // 
+            // panel25
+            // 
+            this.panel25.Controls.Add(this.radioButton45);
+            this.panel25.Controls.Add(this.radioButton46);
+            this.panel25.Controls.Add(this.radioButton47);
+            this.panel25.Controls.Add(this.radioButton48);
+            this.panel25.Controls.Add(this.label13);
+            this.panel25.Controls.Add(this.panel26);
+            this.panel25.Location = new System.Drawing.Point(2, 414);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(204, 35);
+            this.panel25.TabIndex = 9;
+            // 
+            // radioButton45
+            // 
+            this.radioButton45.AutoSize = true;
+            this.radioButton45.Location = new System.Drawing.Point(169, 9);
+            this.radioButton45.Name = "radioButton45";
+            this.radioButton45.Size = new System.Drawing.Size(33, 17);
+            this.radioButton45.TabIndex = 6;
+            this.radioButton45.TabStop = true;
+            this.radioButton45.Text = "D";
+            this.radioButton45.UseVisualStyleBackColor = true;
+            // 
+            // radioButton46
+            // 
+            this.radioButton46.AutoSize = true;
+            this.radioButton46.Location = new System.Drawing.Point(131, 9);
+            this.radioButton46.Name = "radioButton46";
+            this.radioButton46.Size = new System.Drawing.Size(32, 17);
+            this.radioButton46.TabIndex = 5;
+            this.radioButton46.TabStop = true;
+            this.radioButton46.Text = "C";
+            this.radioButton46.UseVisualStyleBackColor = true;
+            // 
+            // radioButton47
+            // 
+            this.radioButton47.AutoSize = true;
+            this.radioButton47.Location = new System.Drawing.Point(93, 9);
+            this.radioButton47.Name = "radioButton47";
+            this.radioButton47.Size = new System.Drawing.Size(32, 17);
+            this.radioButton47.TabIndex = 4;
+            this.radioButton47.TabStop = true;
+            this.radioButton47.Text = "B";
+            this.radioButton47.UseVisualStyleBackColor = true;
+            // 
+            // radioButton48
+            // 
+            this.radioButton48.AutoSize = true;
+            this.radioButton48.Location = new System.Drawing.Point(55, 9);
+            this.radioButton48.Name = "radioButton48";
+            this.radioButton48.Size = new System.Drawing.Size(32, 17);
+            this.radioButton48.TabIndex = 3;
+            this.radioButton48.TabStop = true;
+            this.radioButton48.Text = "A";
+            this.radioButton48.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(6, 11);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(47, 13);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "Câu 10";
+            // 
+            // panel26
+            // 
+            this.panel26.Location = new System.Drawing.Point(0, 57);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(213, 51);
+            this.panel26.TabIndex = 1;
             // 
             // panel21
             // 
@@ -898,7 +972,7 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.richTextBox1);
-            this.panel2.Location = new System.Drawing.Point(0, 41);
+            this.panel2.Location = new System.Drawing.Point(70, 41);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(563, 482);
             this.panel2.TabIndex = 1;
@@ -937,7 +1011,7 @@
             this.btnTamDung.FlatAppearance.BorderSize = 0;
             this.btnTamDung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTamDung.Image = global::AnToanGiaoThong.Properties.Resources.pause;
-            this.btnTamDung.Location = new System.Drawing.Point(396, 3);
+            this.btnTamDung.Location = new System.Drawing.Point(466, 3);
             this.btnTamDung.Name = "btnTamDung";
             this.btnTamDung.Size = new System.Drawing.Size(58, 32);
             this.btnTamDung.TabIndex = 4;
@@ -947,7 +1021,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(627, 3);
+            this.label11.Location = new System.Drawing.Point(697, 3);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(118, 35);
             this.label11.TabIndex = 5;
@@ -956,7 +1030,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::AnToanGiaoThong.Properties.Resources.time;
-            this.pictureBox3.Location = new System.Drawing.Point(578, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(648, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(37, 36);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -970,7 +1044,7 @@
             this.btnBatDau.FlatAppearance.BorderSize = 0;
             this.btnBatDau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBatDau.Image = global::AnToanGiaoThong.Properties.Resources.thirr;
-            this.btnBatDau.Location = new System.Drawing.Point(175, 3);
+            this.btnBatDau.Location = new System.Drawing.Point(245, 3);
             this.btnBatDau.Name = "btnBatDau";
             this.btnBatDau.Size = new System.Drawing.Size(61, 32);
             this.btnBatDau.TabIndex = 3;
@@ -983,85 +1057,11 @@
             this.btnSubmit.FlatAppearance.BorderSize = 0;
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Image = ((System.Drawing.Image)(resources.GetObject("btnSubmit.Image")));
-            this.btnSubmit.Location = new System.Drawing.Point(628, 463);
+            this.btnSubmit.Location = new System.Drawing.Point(698, 463);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(109, 48);
             this.btnSubmit.TabIndex = 2;
             this.btnSubmit.UseVisualStyleBackColor = false;
-            // 
-            // panel25
-            // 
-            this.panel25.Controls.Add(this.radioButton45);
-            this.panel25.Controls.Add(this.radioButton46);
-            this.panel25.Controls.Add(this.radioButton47);
-            this.panel25.Controls.Add(this.radioButton48);
-            this.panel25.Controls.Add(this.label13);
-            this.panel25.Controls.Add(this.panel26);
-            this.panel25.Location = new System.Drawing.Point(2, 414);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(204, 35);
-            this.panel25.TabIndex = 9;
-            // 
-            // radioButton45
-            // 
-            this.radioButton45.AutoSize = true;
-            this.radioButton45.Location = new System.Drawing.Point(169, 9);
-            this.radioButton45.Name = "radioButton45";
-            this.radioButton45.Size = new System.Drawing.Size(33, 17);
-            this.radioButton45.TabIndex = 6;
-            this.radioButton45.TabStop = true;
-            this.radioButton45.Text = "D";
-            this.radioButton45.UseVisualStyleBackColor = true;
-            // 
-            // radioButton46
-            // 
-            this.radioButton46.AutoSize = true;
-            this.radioButton46.Location = new System.Drawing.Point(131, 9);
-            this.radioButton46.Name = "radioButton46";
-            this.radioButton46.Size = new System.Drawing.Size(32, 17);
-            this.radioButton46.TabIndex = 5;
-            this.radioButton46.TabStop = true;
-            this.radioButton46.Text = "C";
-            this.radioButton46.UseVisualStyleBackColor = true;
-            // 
-            // radioButton47
-            // 
-            this.radioButton47.AutoSize = true;
-            this.radioButton47.Location = new System.Drawing.Point(93, 9);
-            this.radioButton47.Name = "radioButton47";
-            this.radioButton47.Size = new System.Drawing.Size(32, 17);
-            this.radioButton47.TabIndex = 4;
-            this.radioButton47.TabStop = true;
-            this.radioButton47.Text = "B";
-            this.radioButton47.UseVisualStyleBackColor = true;
-            // 
-            // radioButton48
-            // 
-            this.radioButton48.AutoSize = true;
-            this.radioButton48.Location = new System.Drawing.Point(55, 9);
-            this.radioButton48.Name = "radioButton48";
-            this.radioButton48.Size = new System.Drawing.Size(32, 17);
-            this.radioButton48.TabIndex = 3;
-            this.radioButton48.TabStop = true;
-            this.radioButton48.Text = "A";
-            this.radioButton48.UseVisualStyleBackColor = true;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 11);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(47, 13);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Câu 10";
-            // 
-            // panel26
-            // 
-            this.panel26.Location = new System.Drawing.Point(0, 57);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(213, 51);
-            this.panel26.TabIndex = 1;
             // 
             // ucThiTracNghiem
             // 
@@ -1076,8 +1076,10 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ucThiTracNghiem";
-            this.Size = new System.Drawing.Size(802, 527);
+            this.Size = new System.Drawing.Size(951, 566);
             this.panel1.ResumeLayout(false);
+            this.panel25.ResumeLayout(false);
+            this.panel25.PerformLayout();
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
             this.panel19.ResumeLayout(false);
@@ -1102,8 +1104,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel25.ResumeLayout(false);
-            this.panel25.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
