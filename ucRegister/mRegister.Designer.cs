@@ -121,7 +121,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 24);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Password";
+            this.label3.Text = "Mật khẩu";
             // 
             // label2
             // 
@@ -129,9 +129,9 @@
             this.label2.Font = new System.Drawing.Font("Papyrus", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(15, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 24);
+            this.label2.Size = new System.Drawing.Size(77, 24);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Username";
+            this.label2.Text = "Tài khoản";
             // 
             // btnRegister
             // 

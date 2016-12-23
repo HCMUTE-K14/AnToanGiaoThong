@@ -36,20 +36,34 @@ namespace AnToanGiaoThong.Frm
 
             if (1!=result_login)
             {
+                MessageBox.Show("Tên đăng nhập mật khẩu không chính xác");
+                mLogin1.setUser("");
+                mLogin1.setPass("");
+                mLogin1.setFocus();
                 return;
             }
+            UserModel um=null;
+            try
+            {
+                dt=lg.infoUser(username).Tables[0];
 
-            dt=lg.infoUser(username).Tables[0];
+                um= new UserModel();
+                um.Username=dt.Rows[0][0].ToString();
+                um.Hoten=dt.Rows[0][2]==null ? "" : dt.Rows[0][2].ToString();
+                um.Ngaysinh=((DateTime)dt.Rows[0][4])==null ? "" : ((DateTime)dt.Rows[0][4]).ToShortDateString();
+                um.Quequan=dt.Rows[0][3].ToString();
+                um.Avatar=(byte[])dt.Rows[0][5];
+            }
+            catch { }
+          
 
-            UserModel um = new UserModel();
-            um.Username=dt.Rows[0][0].ToString();
-            um.Hoten=dt.Rows[0][2].ToString();
-            um.Ngaysinh=((DateTime)dt.Rows[0][3]).ToShortDateString();
-            um.Quequan=dt.Rows[0][4].ToString();
-            um.Avatar=(byte[])dt.Rows[0][5];
-
-            this.Hide();     
-            new frmMain(um).ShowDialog();
+            this.Hide();
+            if (um==null)
+                return;
+            if (um.Username=="ADMIN")
+                new frmAdmin().ShowDialog();
+            else
+                new frmMain(um).ShowDialog();
             this.Close();
 
         }
@@ -66,12 +80,17 @@ namespace AnToanGiaoThong.Frm
         }
         private void label2_Click_1(object sender, EventArgs e)
         {
-            ;
+            this.Close();
         }
 
         private void mLogin1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         ///*Move form*/

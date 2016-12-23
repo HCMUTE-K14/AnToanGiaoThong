@@ -37,12 +37,22 @@ namespace ucLogin
                 
                 password=txtPassword.Text.Trim();
 
-                datasource=textBox1.Text.Trim();
-
                 login(this, e);
             }
         }
-
+        public void setUser(String a)
+        {
+            txtUsername.Text = a;
+           
+        }
+        public void setFocus()
+        {
+            txtUsername.Focus();
+        }
+        public void setPass(String a)
+        {
+            txtPassword.Text = a;
+        }
         private void btnSignup_Click(object sender, EventArgs e)
         {
             if (register!=null)

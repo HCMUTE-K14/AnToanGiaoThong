@@ -31,7 +31,7 @@ namespace ucRegister
         {
             if (txtUsername.Text.Trim().Equals(""))
             {
-                lblReason.Text="User name cannot null";
+                lblReason.Text="Tên tài khoản không được bỏ trống";
                 txtUsername.Focus();
                 return false;
             }
@@ -39,7 +39,7 @@ namespace ucRegister
             {
                 if (!txtPassword.Text.Trim().Equals(txtRepassword.Text.Trim()))
                 {
-                    lblReason.Text="Wrong!!Pls Re-type password";
+                    lblReason.Text="Không trùng khớp! vui lòng gõ lại";
                     txtRepassword.Focus();
                     return false;
                 }

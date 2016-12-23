@@ -16,6 +16,20 @@ namespace ucHeaderButton
         {
             InitializeComponent();
         }
+        private bool _exitClicked;
+
+        public bool ExitClicked
+        {
+            get
+            {
+                return _exitClicked;
+            }
+
+            set
+            {
+                _exitClicked=value;
+            }
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -24,6 +38,7 @@ namespace ucHeaderButton
 
         private void label2_Click(object sender, EventArgs e)
         {
+            _exitClicked=true;
             (((Panel)this.Parent).Parent as Form).Close();
         }
     }

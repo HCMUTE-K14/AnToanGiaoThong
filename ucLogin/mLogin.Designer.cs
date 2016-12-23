@@ -37,13 +37,10 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -52,7 +49,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(313, 47);
+            this.panel1.Size = new System.Drawing.Size(349, 47);
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -60,28 +57,30 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Colonna MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(113, 15);
+            this.label1.Location = new System.Drawing.Point(124, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "Đăng Nhập";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.btnSignup);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btnLogin);
             this.panel2.Controls.Add(this.txtPassword);
             this.panel2.Controls.Add(this.txtUsername);
-            this.panel2.Location = new System.Drawing.Point(44, 53);
+            this.panel2.Location = new System.Drawing.Point(56, 53);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(232, 165);
+            this.panel2.Size = new System.Drawing.Size(236, 155);
             this.panel2.TabIndex = 1;
             // 
             // btnSignup
@@ -91,7 +90,7 @@
             this.btnSignup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignup.Font = new System.Drawing.Font("Segoe Print", 13F, System.Drawing.FontStyle.Bold);
             this.btnSignup.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnSignup.Location = new System.Drawing.Point(3, 113);
+            this.btnSignup.Location = new System.Drawing.Point(3, 96);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(104, 41);
             this.btnSignup.TabIndex = 6;
@@ -102,7 +101,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ucLogin.Properties.Resources.pass;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 75);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 58);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(31, 32);
             this.pictureBox2.TabIndex = 5;
@@ -111,7 +110,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ucLogin.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 37);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 20);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(31, 32);
             this.pictureBox1.TabIndex = 4;
@@ -124,7 +123,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Colonna MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(113, 113);
+            this.btnLogin.Location = new System.Drawing.Point(113, 96);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(116, 41);
             this.btnLogin.TabIndex = 1;
@@ -135,7 +134,7 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(33, 75);
+            this.txtPassword.Location = new System.Drawing.Point(33, 58);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(196, 32);
             this.txtPassword.TabIndex = 3;
@@ -144,27 +143,10 @@
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(33, 37);
+            this.txtUsername.Location = new System.Drawing.Point(33, 20);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(196, 32);
             this.txtUsername.TabIndex = 2;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ucLogin.Properties.Resources.user;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 32);
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(33, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 32);
-            this.textBox1.TabIndex = 7;
             // 
             // mLogin
             // 
@@ -174,7 +156,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "mLogin";
-            this.Size = new System.Drawing.Size(313, 221);
+            this.Size = new System.Drawing.Size(351, 231);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mLogin_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mLogin_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mLogin_MouseUp);
@@ -184,7 +166,6 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -200,7 +181,5 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Button btnSignup;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }

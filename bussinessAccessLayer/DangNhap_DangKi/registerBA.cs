@@ -17,9 +17,10 @@ namespace bussinessAccessLayer.DangNhap_DangKi
         }
         public bool register(string userName,string password)
         {
-            return da.executeNonQuery("spRegister", CommandType.StoredProcedure,
+            return da.executeNonQuery("spDangKi", CommandType.StoredProcedure,
                 new System.Data.SqlClient.SqlParameter("@username", userName),
                 new System.Data.SqlClient.SqlParameter("@password", password));
         }
+      
     }//end class
 }

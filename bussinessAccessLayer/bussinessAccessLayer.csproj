@@ -40,9 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Luat.cs" />
+    <Compile Include="Admin\NganHangCauHoi.cs" />
+    <Compile Include="Admin\TaiKhoan.cs" />
+    <Compile Include="DangNhap_DangKi\editProfileBA.cs" />
     <Compile Include="DangNhap_DangKi\loginBA.cs" />
     <Compile Include="DangNhap_DangKi\registerBA.cs" />
+    <Compile Include="HocLuat\HocLuat.cs" />
+    <Compile Include="KinhNghiem\KinhNghiem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoanDe\SoanDe.cs" />
+    <Compile Include="Thi\ThiTracNghiemBA.cs" />
+    <Compile Include="ThongKe\ThongKe.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\dataAccessLayer\dataAccessLayer.csproj">

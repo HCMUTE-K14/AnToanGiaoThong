@@ -32,7 +32,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.mHeaderButton1 = new ucHeaderButton.mHeaderButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.ucDoiMatKhau1 = new AnToanGiaoThong.Module.ucDoiMatKhau();
+
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,17 +75,14 @@
             // 
             // ucDoiMatKhau1
             // 
-            this.ucDoiMatKhau1.Location = new System.Drawing.Point(0, 50);
-            this.ucDoiMatKhau1.Name = "ucDoiMatKhau1";
-            this.ucDoiMatKhau1.Size = new System.Drawing.Size(323, 203);
-            this.ucDoiMatKhau1.TabIndex = 6;
+
             // 
             // frmDoiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(324, 257);
-            this.Controls.Add(this.ucDoiMatKhau1);
+            
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDoiMatKhau";
@@ -102,6 +99,5 @@
         private System.Windows.Forms.Label label1;
         private ucHeaderButton.mHeaderButton mHeaderButton1;
         private System.Windows.Forms.Panel panel2;
-        private Module.ucDoiMatKhau ucDoiMatKhau1;
     }
 }

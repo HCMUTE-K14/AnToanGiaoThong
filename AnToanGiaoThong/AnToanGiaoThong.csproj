@@ -33,10 +33,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>..\lib\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>..\lib\itextsharp.xtra.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,9 +63,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\CauHoiModel.cs" />
     <Compile Include="Classes\Function.cs" />
     <Compile Include="Classes\MoveFrame.cs" />
+    <Compile Include="Classes\PasswordRule.cs" />
     <Compile Include="Classes\UserModel.cs" />
+    <Compile Include="Frm\frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\frmAdmin.designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm\frmDoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,11 +104,65 @@
     <Compile Include="Frm\frmRegister.Designer.cs">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm\frmSoLuongThem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\frmSoLuongThem.Designer.cs">
+      <DependentUpon>frmSoLuongThem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\savePDF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\savePDF.Designer.cs">
+      <DependentUpon>savePDF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\kingNghiemGiaoThong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\kingNghiemGiaoThong.designer.cs">
+      <DependentUpon>kingNghiemGiaoThong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\quanLyLuat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\quanLyLuat.designer.cs">
+      <DependentUpon>quanLyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\quanLyNganHangCauHoi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\quanLyNganHangCauHoi.designer.cs">
+      <DependentUpon>quanLyNganHangCauHoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\quanLyUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\quanLyUser.designer.cs">
+      <DependentUpon>quanLyUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\thongKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\thongKe.Designer.cs">
+      <DependentUpon>thongKe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Module\ucChangeProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Module\ucChangeProfile.Designer.cs">
       <DependentUpon>ucChangeProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ucChonDapAn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\ucChonDapAn.Designer.cs">
+      <DependentUpon>ucChonDapAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ucDiemNongGT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\ucDiemNongGT.Designer.cs">
+      <DependentUpon>ucDiemNongGT.cs</DependentUpon>
     </Compile>
     <Compile Include="Module\ucDoiMatKhau.cs">
       <SubType>UserControl</SubType>
@@ -123,8 +200,17 @@
     <Compile Include="Module\soanDeThi.Designer.cs">
       <DependentUpon>soanDeThi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Module\XemKinhNghiem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\XemKinhNghiem.designer.cs">
+      <DependentUpon>XemKinhNghiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm\frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm\frmDoiMatKhau.resx">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,8 +226,35 @@
     <EmbeddedResource Include="Frm\frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm\frmSoLuongThem.resx">
+      <DependentUpon>frmSoLuongThem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\savePDF.resx">
+      <DependentUpon>savePDF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\kingNghiemGiaoThong.resx">
+      <DependentUpon>kingNghiemGiaoThong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\quanLyLuat.resx">
+      <DependentUpon>quanLyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\quanLyNganHangCauHoi.resx">
+      <DependentUpon>quanLyNganHangCauHoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\quanLyUser.resx">
+      <DependentUpon>quanLyUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\thongKe.resx">
+      <DependentUpon>thongKe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Module\ucChangeProfile.resx">
       <DependentUpon>ucChangeProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\ucChonDapAn.resx">
+      <DependentUpon>ucChonDapAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\ucDiemNongGT.resx">
+      <DependentUpon>ucDiemNongGT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Module\ucDoiMatKhau.resx">
       <DependentUpon>ucDoiMatKhau.cs</DependentUpon>
@@ -160,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Module\soanDeThi.resx">
       <DependentUpon>soanDeThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\XemKinhNghiem.resx">
+      <DependentUpon>XemKinhNghiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -287,6 +403,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Home_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closebtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizebtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize Window-17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secrecy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-customer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vista_login12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internettt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

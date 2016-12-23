@@ -26,7 +26,7 @@ namespace ucRegister
 
             if (password==null)
             {
-                reason="Password must not be null";
+                reason="Password không được bỏ trống";
                 throw new ArgumentNullException();
             }
 

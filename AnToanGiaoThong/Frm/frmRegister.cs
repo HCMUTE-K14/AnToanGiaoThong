@@ -25,17 +25,17 @@ namespace AnToanGiaoThong.Frm
         {
             string username = mRegister1.username;
             string password = mRegister1.password;
-            MessageBox.Show(username+password);
             bool result_register = reg.register(username, password);
             if (true==result_register)
             {
-                MessageBox.Show(password);
-
-                MessageBox.Show("Success!");
-            }else
-            {
-                MessageBox.Show("fails");
+                MessageBox.Show("Đăng Kí thành công!");
+                this.Close();
             }
+            else
+            {
+                MessageBox.Show("Thất bại");
+            }
+           
         }
         private void label1_Click(object sender, EventArgs e)
         {

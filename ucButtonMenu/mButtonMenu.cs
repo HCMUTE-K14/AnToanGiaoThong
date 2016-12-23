@@ -69,5 +69,9 @@ namespace ucButtonMenu
         {
             return this.label1.Text;
         }
+        public void setBackColor(int a, int b, int c)
+        {
+            this.BackColor = Color.FromArgb(a,b,c);
+        }
     }
 }

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgAvatar = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
@@ -39,18 +39,20 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.lblHoTen = new System.Windows.Forms.TextBox();
-            this.lblNgaySinh = new System.Windows.Forms.TextBox();
             this.lblQueQuan = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lblNgaySinh = new System.Windows.Forms.DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.imgAvatar)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // imgAvatar
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(19, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(84, 84);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.imgAvatar.Location = new System.Drawing.Point(19, 19);
+            this.imgAvatar.Name = "imgAvatar";
+            this.imgAvatar.Size = new System.Drawing.Size(84, 84);
+            this.imgAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgAvatar.TabIndex = 2;
+            this.imgAvatar.TabStop = false;
+            this.imgAvatar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button1
             // 
@@ -149,14 +151,6 @@
             this.lblHoTen.Size = new System.Drawing.Size(126, 20);
             this.lblHoTen.TabIndex = 16;
             // 
-            // lblNgaySinh
-            // 
-            this.lblNgaySinh.Enabled = false;
-            this.lblNgaySinh.Location = new System.Drawing.Point(216, 78);
-            this.lblNgaySinh.Name = "lblNgaySinh";
-            this.lblNgaySinh.Size = new System.Drawing.Size(126, 20);
-            this.lblNgaySinh.TabIndex = 17;
-            // 
             // lblQueQuan
             // 
             this.lblQueQuan.Enabled = false;
@@ -165,12 +159,21 @@
             this.lblQueQuan.Size = new System.Drawing.Size(126, 20);
             this.lblQueQuan.TabIndex = 18;
             // 
+            // lblNgaySinh
+            // 
+            this.lblNgaySinh.Enabled = false;
+            this.lblNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.lblNgaySinh.Location = new System.Drawing.Point(216, 79);
+            this.lblNgaySinh.Name = "lblNgaySinh";
+            this.lblNgaySinh.Size = new System.Drawing.Size(126, 20);
+            this.lblNgaySinh.TabIndex = 19;
+            // 
             // ucChangeProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lblQueQuan);
             this.Controls.Add(this.lblNgaySinh);
+            this.Controls.Add(this.lblQueQuan);
             this.Controls.Add(this.lblHoTen);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -181,18 +184,18 @@
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.imgAvatar);
             this.Name = "ucChangeProfile";
             this.Size = new System.Drawing.Size(431, 147);
             this.Load += new System.EventHandler(this.ChangeProfile_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgAvatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox imgAvatar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblUsername;
@@ -203,7 +206,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox lblHoTen;
-        private System.Windows.Forms.TextBox lblNgaySinh;
         private System.Windows.Forms.TextBox lblQueQuan;
+        private System.Windows.Forms.DateTimePicker lblNgaySinh;
     }
 }

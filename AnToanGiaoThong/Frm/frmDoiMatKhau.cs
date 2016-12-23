@@ -8,18 +8,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using AnToanGiaoThong.Classes;
 namespace AnToanGiaoThong.Frm
 {
     public partial class frmDoiMatKhau : Form
     {
-        public frmDoiMatKhau()
+        string userName;
+        public frmDoiMatKhau(string userName)
         {
             InitializeComponent();
 
             new MoveFrame(this.panel1);
 
-            this.panel2.Controls.Add(new Module.ucDoiMatKhau());
+            this.userName=userName;
+
+            Module.ucDoiMatKhau uc = new Module.ucDoiMatKhau(userName);
+            uc.Location=new Point(-1, 50);
+            this.Controls.Add(uc);
         }
+
+        
     }
 }

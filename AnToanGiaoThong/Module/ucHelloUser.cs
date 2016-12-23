@@ -17,12 +17,18 @@ namespace AnToanGiaoThong.Module
         public ucHelloUser(UserModel um)
         {
             InitializeComponent();
+
             this.um=um;
-            System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
-            gp.AddEllipse(0, 0, pictureBox1.Width-3, pictureBox1.Height-3);
-            Region rg = new Region(gp);
-            pictureBox1.Region=rg;
-            pictureBox1.Image=new Function().ResizeImage(new Function().Byte2Image(um.Avatar),pictureBox1.Width,pictureBox1.Height);
+            try
+            {
+                System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
+                gp.AddEllipse(0, 0, pictureBox1.Width-3, pictureBox1.Height-3);
+                Region rg = new Region(gp);
+                pictureBox1.Region=rg;
+                pictureBox1.Image=new Function().ResizeImage(new Function().Byte2Image(um.Avatar), pictureBox1.Width, pictureBox1.Height);
+            }
+            catch { }
+           
         }
 
         private void txtDoiPro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -44,10 +44,26 @@ namespace AnToanGiaoThong.Classes
         }
         public Bitmap Byte2Image(byte[] img)
         {
-            MemoryStream str = new MemoryStream();
-            str.Write(img, 0, img.Length);
-            Bitmap bit = new Bitmap(str);
+            Bitmap bit = null;
+            try
+            {
+                MemoryStream str = new MemoryStream();
+                str.Write(img, 0, img.Length);
+                bit= new Bitmap(str);
+               
+            }
+            catch { }
             return bit;
+        }
+        public byte[] Image2Byte(Image img)
+        {
+            MemoryStream ms = new MemoryStream();
+            byte[] arrImg;
+            img.Save(ms, img.RawFormat);
+            arrImg=ms.GetBuffer();
+            ms.Close();
+
+            return arrImg;
         }
 
 
